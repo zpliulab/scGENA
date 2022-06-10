@@ -1,4 +1,4 @@
-
+#Created by Zhiping liu lab/ Algabri
 # single cell Gene co-Expression Network Analysis (scGENA)
 
 #in this pipeline we illustrate all the process for analysing single cell data
