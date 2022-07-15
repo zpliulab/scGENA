@@ -252,5 +252,18 @@ for (mod in uniquemodcolors)  {
 save(multiExpr, softPower, nSets, setLabels, shortLabels, file = "RData/Beta_multiExpre_Network.RData")
 write.csv(reducedTOM,file=paste0('output/reduced_matrix.csv'))
 
+#plotting a network heatmap
+dissTOM = 1-TOMsimilarityFromExpr(datExpr, power = 8);
+# # Transform dissTOM with a power to make moderately strong connections more visible in the heatmap
+plotTOM = dissTOM^7;
+# # Set diagonal to NA for a nicer plot
+diag(plotTOM) = NA;
+# # Call the plot function
+geneTree = flashClust(as.dist(dissTOM), method="average")
+# 
+# tiff("figures/network heatmap.tiff", units="in", width=12, height=9, res=300)
+TOMplot(plotTOM, geneTree, moduleColors, main = "Network heatmap plot, Beta genes")
+# dev.off()
+
 
 # # next: further analysis
