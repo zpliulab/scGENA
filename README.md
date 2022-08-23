@@ -2,5 +2,5 @@ scGENA: A single-cell gene co-expression network analysis framework for clusteri
 
 
 #Data
-1. human islets rpkm gene expression data can be acquired from: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81608 (supplementary materials)
+1. Human islets rpkm gene expression data can be acquired from: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81608 (supplementary materials)
 2. Gene and cells annotation files are in Data folder.
