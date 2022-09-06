@@ -128,16 +128,16 @@ xinse_meta.markers1 <- FindAllMarkers(xinse_meta, only.pos = TRUE,
                                      min.pct = 0.25, 
                                      logfc.threshold = 0.25)
 
-gen_alph <- DE_cell_markers[1:133,]           #133
-gen_beta <- DE_cell_markers[134:1403,] #1270
-gen_gam <- DE_cell_markers[1404:1748,]  #345
-gen_deta <- DE_cell_markers[1749:1919,] #171
+#gen_alph <- DE_cell_markers[1:133,]    #133
+#gen_beta <- DE_cell_markers[134:1403,] #1270
+#gen_gam <- DE_cell_markers[1404:1748,]  #345
+#gen_deta <- DE_cell_markers[1749:1919,] #171
 
 #create matrix to genes
-gen_alph <- xin_nonNorm[gen_alph,]
-gen_beta <- xin_nonNorm[gen_beta,]
-gen_gam <- xin_nonNorm[gen_gam,]
-gen_deta <- xin_nonNorm[gen_deta,]
+#gen_alph <- xin_nonNorm[gen_alph,]
+#gen_beta <- xin_nonNorm[gen_beta,]
+#gen_gam <- xin_nonNorm[gen_gam,]
+#gen_deta <- xin_nonNorm[gen_deta,]
 
 
 
